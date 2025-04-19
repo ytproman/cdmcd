@@ -14,7 +14,7 @@ let countRound = 0;
 function grabCoef(){
     const countOfRounds = prompt('Type how many coef to write:');
     for (let i = 0; i < countOfRounds; i++){
-        arrayCoef.push(prompt(`type coef: ${i+1}/countOfRounds\nin this formate: 1.32/1.3/1`));
+        arrayCoef.push(prompt(`type coef: ${i+1}/${countOfRounds}\nin this formate: 1.32/1.3/1`));
     }
     // let bar = confirm('Confirm or deny');
 }
