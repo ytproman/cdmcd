@@ -273,31 +273,57 @@
     opacity: 0;
   }
   
-  #coef-form-wrapper {
+#coef-form-wrapper {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.7);
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 1000;
+  z-index: 9999;
 }
 
 #coef-form {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
+  background-color: #1e1e1e;
+  color: #fff;
+  padding: 30px;
+  border-radius: 12px;
   max-width: 400px;
   width: 90%;
-  box-shadow: 0 0 15px rgba(0,0,0,0.3);
-  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+  font-family: sans-serif;
 }
 
-#dynamic-fields input {
-  margin-top: 5px;
+#coef-form h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+#coef-form input[type="number"],
+#coef-form input[type="text"] {
   width: 100%;
-  padding: 5px;
+  padding: 10px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+#coef-form button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #ff0000;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#coef-form button:hover {
+  background-color: #cc0000;
 }

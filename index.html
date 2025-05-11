@@ -6,6 +6,15 @@
   </head>
   
   <body onLoad="grabCoef()">
+    <div id="coef-form-wrapper">
+  <form id="coef-form" onsubmit="return false;">
+    <h3>Введите количество коэффициентов</h3>
+    <input type="number" id="coef-count" min="1" required />
+    <button type="button" id="generate-fields">Далее</button>
+    <div id="dynamic-fields"></div>
+    <button type="button" id="submit-coefs" style="display: none;">Сохранить</button>
+  </form>
+</div>
     <div class="background">
       <div class="container">
         <img class="pers-animate" src="img/plane.svg" alt="plane">
@@ -40,15 +49,7 @@
       </div>
     </div>
     
-<div id="coef-form-wrapper">
-  <form id="coef-form" onsubmit="return false;">
-    <h3>Введите количество коэффициентов</h3>
-    <input type="number" id="coef-count" min="1" required />
-    <button type="button" id="generate-fields">Далее</button>
-    <div id="dynamic-fields"></div>
-    <button type="button" id="submit-coefs" style="display: none;">Сохранить</button>
-  </form>
-</div>
+
 
 
     <script src="script.js"></script>
