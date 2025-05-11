@@ -295,6 +295,8 @@
   width: 90%;
   box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
   font-family: sans-serif;
+  max-height: 80vh; /* или другая подходящая высота, меньше чем 100vh */
+  overflow-y: auto;
 }
 
 #coef-form h3 {
