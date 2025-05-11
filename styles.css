@@ -273,3 +273,31 @@
     opacity: 0;
   }
   
+  #coef-form-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+#coef-form {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+#dynamic-fields input {
+  margin-top: 5px;
+  width: 100%;
+  padding: 5px;
+}
