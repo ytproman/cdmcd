@@ -15,7 +15,8 @@ generateFieldsBtn.onclick = () => {
     for (let i = 0; i < count; i++) {
         const input = document.createElement("input");
         input.type = "text";
-        input.placeholder = `Коэффициент ${i + 1} (например: 1.45/1.2/1)`;
+        // input.placeholder = `Коэффициент ${i + 1} (например: 1.45/1.2/1)`;
+        input.value = (Math.random() * (9 - 1.01) + 1.01).toFixed(2);
         input.required = true;
         input.classList.add("coef-input");
         dynamicFields.appendChild(input);
